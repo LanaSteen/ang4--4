@@ -55,7 +55,23 @@ export class MainComponent {
     }
 
     this.studentArr.push(this.forDisplayStudent)
-    // this.resetStudent()
+    this.resetStudent()
     console.log(this.studentArr)
+  }
+
+  delete(index:number){
+   console.log(index)
+   this.studentArr.splice(index,1)
+  }
+  edit(index:number){
+    this.student.name = this.studentArr[index].name
+    this.student.age = this.studentArr[index].age
+    this.student.grade = this.studentArr[index].grade
+    this.student.subjects = this.studentArr[index].subjects
+    this.student.isEnrolled = this.studentArr[index].isEnrolled
+    this.student.address.street = this.studentArr[index].address.street
+    this.student.address.city = this.studentArr[index].address.city
+    this.student.address.zip = this.studentArr[index].address.zip
+    this.delete(index)
   }
 }

@@ -22,7 +22,7 @@
 
 
 <div class="displayData">
-    <div class="student-info" *ngFor="let st of studentArr" >
+    <div class="student-info" *ngFor="let st of studentArr  let index=index" >
         <h2>Student Info</h2>
         <p>Name: {{ st.name }}</p>
         <p>Age: {{ st.age }}</p>
@@ -34,6 +34,8 @@
         <p>Street: {{ st.address.street }}</p>
         <p>City: {{ st.address.city }}</p>
         <p>ZIP: {{ st.address.zip }}</p>
+        <button (click)="delete(index)">DELETE</button>
+        <button (click)="edit(index)">EDIT</button>
     </div>
    
 
