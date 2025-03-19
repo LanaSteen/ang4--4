@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { Student } from '../Models/Student';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { DisplayDataComponent } from "../display-data/display-data.component";
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, DisplayDataComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })
@@ -38,7 +39,6 @@ export class MainComponent {
     this.student.address.city = ""
     this.student.address.zip = ""
   }
-
 
   submit(){
     this.forDisplayStudent = {

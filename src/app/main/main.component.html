@@ -21,7 +21,12 @@
 
 
 
-<div class="displayData">
+  <app-display-data [studentData]="studentArr"></app-display-data>
+
+
+
+
+<!-- <div class="displayData">
     <div class="student-info" *ngFor="let st of studentArr  let index=index" >
         <h2>Student Info</h2>
         <p>Name: {{ st.name }}</p>
@@ -36,8 +41,12 @@
         <p>ZIP: {{ st.address.zip }}</p>
         <button (click)="delete(index)">DELETE</button>
         <button (click)="edit(index)">EDIT</button>
+        <input type="checkbox" name="" id="">
     </div>
    
 
 
 </div>
+
+
+<button>DELETE SELECTED</button> -->
