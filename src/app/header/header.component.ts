@@ -11,4 +11,9 @@ import { ButtonComponent } from "../button/button.component";
 export class HeaderComponent {
   infoFromParent = "Log In"
   infoAboutColor = "bgColorGreen"
+
+
+  buttonClicked(ind:number){
+        console.log( `child send id ${ind}`)
+  }
 }

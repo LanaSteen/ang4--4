@@ -11,6 +11,6 @@ import { ButtonComponent } from '../button/button.component';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  infoFromParent = "Sunscribe"
+  infoFromParent = "Subscribe"
   colorFromFooter = "bgColorBlue"
 }

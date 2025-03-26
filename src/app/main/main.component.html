@@ -21,7 +21,11 @@
 
 
 
-  <app-display-data [studentData]="studentArr"></app-display-data>
+  <app-display-data 
+     [studentData]="studentArr" 
+     (deleteId)="deleteStudent($event)"
+      (editId)="editStudent($event)"
+     ></app-display-data>
 
 
 

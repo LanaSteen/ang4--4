@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -11,4 +11,13 @@ import { Component, Input } from '@angular/core';
 export class ButtonComponent {
      @Input() info? :any
      @Input() btnClass : any
+
+     @Output() buttonClicked = new EventEmitter<number>()
+
+
+     sendIfno(ind : number){
+          this.buttonClicked.emit(ind)
+     }
 }
+
+

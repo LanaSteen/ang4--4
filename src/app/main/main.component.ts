@@ -74,4 +74,14 @@ export class MainComponent {
     this.student.address.zip = this.studentArr[index].address.zip
     this.delete(index)
   }
+
+
+  editStudent(ind : number){
+         console.log(ind)
+         this.edit(ind)
+  }
+
+  deleteStudent(ind : number){
+    this.delete(ind)
+  }
 }
